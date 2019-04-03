@@ -278,7 +278,7 @@ class Game(object):
                 initial_y = 0,
                 img_file = wall_imgs[0],
                 game = self),
-            EndLine(initial_x = self.width - wall_width, #right
+            BallDeflector(initial_x = self.width - wall_width, #right
                 initial_y = 0,
                 img_file = wall_imgs[0],
                 game = self),
