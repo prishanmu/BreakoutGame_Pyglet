@@ -283,7 +283,15 @@ class Game(object):
                 img_file = wall_imgs[0],
                 game = self),
         ]
-        self.bricks = []  # Not used in this initial version
+        self.bricks = [
+            for j in range (0,6): 
+                x = j * 40
+                for i in range (0,12):
+                    BallDeflector(initial_x = x,
+                                  initial_y = i * 40, 
+                                  img_file = wall_imgs[0] # change to different image for addition tweak
+                                  game = self),
+        ]
         self.game_objects = self.walls + self.bricks + self.paddles + self.balls
 
     def update(self,pressed_keys):
