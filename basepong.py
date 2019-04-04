@@ -87,6 +87,14 @@ class EndLine(BallDeflector):
         else:
             # Shouldn't happen. Must have miscalculated which side was hit, since this is an endline
             raise Exception(side_hit)
+            
+  
+class Brick(BallDeflector):
+    
+    def deflect_ball(self, ball, side_hit):
+        print("hit a brick!")
+        super(BallDeflector, self).deflect_ball(self, ball, side_hit)
+        self.game_objects.remove()
 
 class Ball(GameObject):
 
