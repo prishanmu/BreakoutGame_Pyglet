@@ -298,7 +298,7 @@ class Game(object):
                 for i in range (0,12):
                     BallDeflector(initial_x = x,
                                   initial_y = i * 40, 
-                                  img_file = wall_imgs[0] # change to different image for addition tweak
+                                  img_file = wall_imgs[2] # change to different image for addition tweak
                                   game = self),
         ]
         self.game_objects = self.walls + self.bricks + self.paddles + self.balls
@@ -437,7 +437,7 @@ def main():
                    pyglet.resource.image('paddle2.png')]
     wall_imgs = [pyglet.resource.image('vertical_wall.png'),
                  pyglet.resource.image('horizontal_wall.png'),
-                 pyglet.resource.image('brick.png')]
+                 pyglet.resource.image('theater symbol.png')]
     window = GameWindow(ball_img,paddle_imgs, wall_imgs)
     debug_print("Done initializing window! Initializing app...")
 
