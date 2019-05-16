@@ -1,8 +1,10 @@
 # Breakout
 
+Assignment for SI 507: Intermediate Programming. Modified a game of Pong into a game of Breakout. 
+
 ## What does this code do? 
 
-This code creates a version of the classic game Breakout. You may run the code to start the game by running the "SI507_project4.py" file. 
+This code runs a version of the classic game Breakout. You may run the code to start the game by running the "SI507_project4.py" file. 
 
 In order to run this program, you must have the pyglet, random, and math modules installed.
 
